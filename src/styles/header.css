@@ -1,0 +1,38 @@
+.header {
+  @apply w-full flex items-center justify-around select-none;
+}
+.logo {
+  @apply md:w-[60px];
+}
+.marca {
+  @apply text-gray-500 gap-1 items-center hidden sm:flex text-[20px];
+}
+.marca span {
+  @apply text-gray-800 font-black text-[25px];
+}
+.div_icons {
+  @apply flex items-center justify-center gap-2;
+}
+.icons {
+  @apply text-[30px] lg:text-[40px] cursor-pointer;
+}
+.icons:first-child {
+  @apply text-red-300;
+  transition: 0.5s;
+}
+.icons:first-child:hover {
+  @apply text-red-500;
+}
+.cart {
+  @apply text-zinc-400 pr-0;
+  transition: 0.5s;
+}
+.cart:hover {
+  @apply text-zinc-800;
+}
+.div_descCart {
+  @apply text-zinc-500;
+}
+.descCart:hover {
+  @apply text-black;
+}
