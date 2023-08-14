@@ -19,7 +19,6 @@ export default function MainSection({ }: Props) {
         </div>
         <div className='flex flex-col'>
           <MainList />
-          <MainList />
         </div>
       </main>
     </div>
