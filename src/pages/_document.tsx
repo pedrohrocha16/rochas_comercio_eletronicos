@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html lang="pt-br">
       <title>Rochas e-commerce</title>
+      <link rel="shortcut icon" href="/icon.svg" type="image/x-icon" />
       <Head />
       <body>
         <Main />
