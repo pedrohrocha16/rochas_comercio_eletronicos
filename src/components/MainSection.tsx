@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { FaSearch } from 'react-icons/fa'
+import MainList from './MainList'
 
 type Props = {}
 
@@ -15,6 +16,9 @@ export default function MainSection({ }: Props) {
           <h1 className='font-[600] w-full text-[30px]'>Encontre o seu produto com o melhor preço do mercado!</h1>
           <p className='font-light w-full'>Rocha's e-commerce há mais de 10 anos sendo referência em vendas no país!</p>
           <Image src="/peoplebuying.png" width={200} height={200} alt='people' className='image_main' />
+        </div>
+        <div className='flex flex-col'>
+          <MainList />
         </div>
       </main>
     </div>
