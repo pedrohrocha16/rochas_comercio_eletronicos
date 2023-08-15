@@ -17,7 +17,7 @@ export default function MainSection({ }: Props) {
           <p className='font-light w-full'>Rocha's e-commerce há mais de 10 anos sendo referência em vendas no país!</p>
           <Image src="/peoplebuying.png" width={200} height={200} alt='people' className='image_main' />
         </div>
-        <div className='flex flex-col'>
+        <div>
           <MainList />
         </div>
       </main>

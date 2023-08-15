@@ -14,7 +14,7 @@ export default function MainList({ }: Props) {
                <CiMobile3 className="icon" /><span>Celulares</span>
             </li>
             <li>
-               <PiTelevisionSimple className="icon" /><span>Televisões</span>
+               <PiTelevisionSimple className="icon" /><span>Televisores</span>
             </li>
             <li>
                <RiComputerLine className="icon" /><span>Informática</span>

@@ -1,13 +1,13 @@
 .mainlist {
-  @apply flex flex-row justify-center items-center m-5 select-none;
+  @apply flex justify-center items-center;
 }
 .mainlist ul {
-  @apply grid gap-2 grid-cols-2;
-  @apply sm:grid-cols-3 sm:gap-5;
+  @apply grid grid-cols-2 w-[250px] gap-1 sm:w-[450px];
+  @apply sm:grid-cols-3 lg:grid-cols-4 sm:gap-2 lg:gap-5 xl:gap-6;
 }
 .mainlist li {
-  @apply flex gap-1 justify-start items-center p-1 text-zinc-400 transition duration-100;
-  @apply cursor-pointer w-[125px] sm:w-[160px]
+  @apply flex gap-1 text-zinc-400 transition duration-100;
+  @apply cursor-pointer w-[200px] sm:w-[160px];
 }
 .mainlist li:hover {
   @apply text-zinc-900;
