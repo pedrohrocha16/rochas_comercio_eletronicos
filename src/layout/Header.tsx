@@ -13,8 +13,8 @@ export default function Header({ }: Props) {
             <AiOutlineHeart className="icons" />
             <AiOutlineShoppingCart className="icons cart" />
             <div className='div_descCart'>
-               <p className='text-[14px] descCart'>R$ 0,00</p>
-               <p className='text-[14px] descCart'>0 item</p>
+               <p className='descCart'>R$ 0,00</p>
+               <p className='descCart'>0 item</p>
             </div>
          </div>
       </div>

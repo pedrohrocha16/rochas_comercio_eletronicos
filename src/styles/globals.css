@@ -2,6 +2,7 @@
 @import url(mainSection.css);
 @import url(footer.css);
 @import url(mainlist.css);
+@import url(mainproducts.css);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

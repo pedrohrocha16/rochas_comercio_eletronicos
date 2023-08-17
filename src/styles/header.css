@@ -5,10 +5,10 @@
   @apply md:w-[60px];
 }
 .marca {
-  @apply text-gray-500 gap-1 items-center hidden sm:flex text-[20px];
+  @apply text-gray-500 gap-1 items-center hidden sm:flex text-[20px] text-center lg:text-[30px] lg:gap-3;
 }
 .marca span {
-  @apply text-gray-800 font-black text-[25px];
+  @apply text-gray-800 font-black text-[25px] lg:text-[35px];
 }
 .div_icons {
   @apply flex items-center justify-center gap-2;
@@ -32,6 +32,9 @@
 }
 .div_descCart {
   @apply text-zinc-500;
+}
+.descCart {
+  @apply text-[12px]
 }
 .descCart:hover {
   @apply text-black;
