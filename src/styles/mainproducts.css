@@ -1,15 +1,16 @@
 .main_products {
-   @apply flex items-center flex-col justify-center mt-20 select-none
+   @apply flex items-center flex-col justify-center mt-20 select-none border-t-4 border-red-100
 }
 .main_products h2 {
-   @apply font-bold text-[22px] mb-5
+   @apply font-medium text-[22px] mb-5 mt-5
 }
 .main_products ul {
    @apply grid grid-cols-1 gap-5;
    @apply sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5
 }
 .main_products li {
-   @apply border border-zinc-300 rounded-[30px] w-[250px] p-[25px] flex flex-wrap items-center justify-center text-center
+   @apply border border-zinc-300 rounded-[30px]  p-[25px] flex flex-wrap items-center justify-center text-center;
+   @apply w-[350px] sm:w-[250px] md:w-[300px] xl:w-[290px]
 }
 .main_products h4 {
    @apply text-red-400 font-bold text-[17px]

@@ -1,5 +1,5 @@
 .header {
-  @apply w-full flex items-center justify-around select-none;
+  @apply w-[100%] flex items-center justify-around gap-12 select-none;
 }
 .logo {
   @apply md:w-[60px];
@@ -14,7 +14,7 @@
   @apply flex items-center justify-center gap-2;
 }
 .icons {
-  @apply text-[30px] lg:text-[40px] cursor-pointer;
+  @apply text-[40px] cursor-pointer;
 }
 .icons:first-child {
   @apply text-red-300;
