@@ -10,7 +10,7 @@
 }
 .main_products li {
    @apply border border-zinc-300 rounded-[30px]  p-[25px] flex flex-wrap items-center justify-center text-center;
-   @apply w-[250px] sm:w-[250px] md:w-[300px] xl:w-[290px]
+   @apply w-[280px] sm:w-[250px] md:w-[300px] xl:w-[290px]
 }
 .main_products h4 {
    @apply text-red-400 font-bold text-[18px] mb-2 mt-2
