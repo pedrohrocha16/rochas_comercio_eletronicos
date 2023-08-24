@@ -15,6 +15,3 @@
 .icon_search {
   @apply text-[20px] cursor-pointer
 }
-.image_main {
-  @apply md:w-[200px] xl:w-[220px]
-}

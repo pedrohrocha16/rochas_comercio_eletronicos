@@ -1,0 +1,32 @@
+.fade {
+   background-color: #000;
+   height: 100%;
+   opacity: 0.8;
+   left: 0;
+   top: 0;
+   position: absolute;
+   width: 100%;
+}
+.modal {
+   background-color: white;
+   border-radius: 20px;
+   display: flex;
+   justify-content: space-around;
+   left: 0;
+   height: 500px;
+   margin: 0 auto;
+   padding: 25px;
+   position: absolute;
+   right: 0;
+   text-align: center;
+   top: 10%;
+   width: 300px;
+   z-index: 1;
+}
+.modal button {
+   @apply text-red-400;
+   font-size: 32px;
+   height: 0;
+   margin: 0;
+   padding: 0;
+}

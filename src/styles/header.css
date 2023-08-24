@@ -13,14 +13,14 @@
 .div_icons {
   @apply flex items-center justify-center gap-2;
 }
-.icons {
+.icons, .icon_heart {
   @apply text-[40px] cursor-pointer;
 }
-.icons:first-child {
+.icon_heart {
   @apply text-red-300;
   transition: 0.5s;
 }
-.icons:first-child:hover {
+.icon_heart:hover {
   @apply text-red-500;
 }
 .cart {

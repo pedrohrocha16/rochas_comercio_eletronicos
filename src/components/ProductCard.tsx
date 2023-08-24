@@ -13,12 +13,12 @@ export default function ProductCard({ src, title, info, tag, price }: Props) {
    return (
       <li>
          <div className='flex flex-col items-center'>
-            <Image src={src} width={200} height={200} alt='product' />
+            <Image src={src} width={200} height={200} alt='product' className="w-auto h-auto" priority />
             <h4>{title}</h4>
             <span>{info}</span>
          </div>
          <div className='products_price'>
-            <p>R${price}</p>
+            <p>R${price.toFixed(2)}</p>
             <IoAddCircle className="products_price_icon" />
          </div>
          <div className='products_tags'>
