@@ -31,8 +31,12 @@ export default function Header({ }: Props) {
             <div id='modal'>
                <div className='fade'></div>
                <div className="modal">
-                  <h2>texto do modal</h2>
-                  <button onClick={() => setCartVisible(false)}><AiFillCloseSquare /></button>
+                  <h2 className="title_car">Carrinho de Compras</h2>
+                  <button className='modal_close' onClick={() => setCartVisible(false)}><AiFillCloseSquare /></button>
+                  <div className="dados_car">
+                     <p className='quantd_item_car'>Quantidade</p>
+                     <button className='quantd_item_remove'>Esvaziar Carrinho</button>
+                  </div>
                </div>
             </div> : ""}
       </div>

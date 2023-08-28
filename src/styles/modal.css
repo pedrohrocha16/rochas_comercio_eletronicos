@@ -11,9 +11,10 @@
    background-color: white;
    border-radius: 20px;
    display: flex;
+   flex-wrap: wrap;
    justify-content: space-around;
    left: 0;
-   height: 500px;
+   height: auto;
    margin: 0 auto;
    padding: 25px;
    position: absolute;
@@ -23,10 +24,33 @@
    width: 300px;
    z-index: 1;
 }
-.modal button {
+.title_car {
+   font-size: 20px;
+   font-weight: bold
+}
+.modal_close {
    @apply text-red-400;
-   font-size: 32px;
-   height: 0;
-   margin: 0;
+   font-size: 22px;
+   margin-left: 2rem;
    padding: 0;
+   transition: 0.5s;
+}
+.modal_close:hover {
+   @apply text-red-500
+}
+.modal_close:active {
+   @apply text-red-600
+}
+.dados_car {
+   display: flex;
+   justify-content: space-around;
+   margin-top: 2rem;
+   width: 300px;
+}
+.quantd_item_car {
+   font-size: 13px;
+}
+.quantd_item_remove {
+   font-size: 13px;
+   text-decoration: underline;
 }
