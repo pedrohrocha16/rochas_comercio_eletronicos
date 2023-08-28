@@ -8,8 +8,6 @@ type Props = {}
 
 export default function MainList({ }: Props) {
 
-
-
    return (
       <div className='mainlist'>
          <ul>

@@ -22,12 +22,14 @@ export default function MainSection({ }: Props) {
         transition={{ duration: 1.5 }}
       >
         <main>
-          <div className='select-none flex flex-col h-[540px] md:h-[400px] sm:m-[30px] text-center  justify-center items-center'>
+          <div className='select-none flex flex-col max-h-[70vh] md:h-[400px] sm:m-[30px] text-center items-center'>
             <h1 className='font-[600] w-full text-[30px]'>Encontre o seu produto com o melhor preço do mercado!</h1>
             <p className='font-light w-full'>Rocha's e-commerce há mais de 10 anos sendo referência em vendas no país!</p>
             <Image src="/peoplebuying.png" width={200} height={200} alt='people' className="w-auto h-auto" priority />
           </div>
-          <MainList />
+          <div className='mt-[2rem]'>
+            <MainList />
+          </div>
         </main>
       </motion.div>
       <MainProducts />
