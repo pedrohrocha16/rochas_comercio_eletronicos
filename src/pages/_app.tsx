@@ -1,5 +1,4 @@
 import MainContainer from '@/components/MainContainer'
-import { ProductsContext } from '@/context/ProductsContext'
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 
