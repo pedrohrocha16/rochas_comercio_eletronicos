@@ -1,7 +1,8 @@
-import {AiFillCloseSquare} from 'react-icons/ai'
+import { AiFillCloseSquare } from 'react-icons/ai'
 import Image from 'next/image'
 import { useState } from 'react'
 import { AiOutlineHeart, AiOutlineShoppingCart } from 'react-icons/ai'
+import Cart from '@/components/CartProducts'
 
 type Props = {}
 
@@ -27,18 +28,8 @@ export default function Header({ }: Props) {
                </div>
             </div>
          </div>
-         {cartVisible ?
-            <div id='modal'>
-               <div className='fade'></div>
-               <div className="modal">
-                  <h2 className="title_car">Carrinho de Compras</h2>
-                  <button className='modal_close' onClick={() => setCartVisible(false)}><AiFillCloseSquare /></button>
-                  <div className="dados_car">
-                     <p className='quantd_item_car'>Quantidade</p>
-                     <button className='quantd_item_remove'>Esvaziar Carrinho</button>
-                  </div>
-               </div>
-            </div> : ""}
+         {cartVisible &&
+            <Cart func={setCartVisible} condition={false} />}
       </div>
    )
 }

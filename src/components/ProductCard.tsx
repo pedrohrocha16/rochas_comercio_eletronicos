@@ -1,20 +1,21 @@
 import Image from "next/image"
 import { IoAddCircle } from 'react-icons/io5'
 
-type Props = {
+type Product = {
    src: string
-   title: string
+   name: string
    info: string
    tag: string
    price: number
 }
 
-export default function ProductCard({ src, title, info, tag, price }: Props) {
+export default function ProductCard({ src, name, info, price, tag }: Product) {
+
    return (
       <li>
          <div className='flex flex-col items-center'>
             <Image src={src} width={200} height={200} alt='product' className="w-auto h-auto" priority />
-            <h4>{title}</h4>
+            <h4>{name}</h4>
             <span>{info}</span>
          </div>
          <div className='products_price'>

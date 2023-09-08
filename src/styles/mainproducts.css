@@ -9,7 +9,7 @@
    @apply sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5
 }
 .main_products li {
-   @apply border border-zinc-300 rounded-[30px]  p-[25px] flex flex-wrap items-center justify-center text-center;
+   @apply border border-zinc-300 rounded-[30px] p-[25px] flex flex-wrap items-center justify-center text-center;
    @apply w-[280px] sm:w-[250px] md:w-[300px] xl:w-[290px]
 }
 .main_products h4 {
