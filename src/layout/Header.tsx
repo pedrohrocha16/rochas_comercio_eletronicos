@@ -1,14 +1,10 @@
-import { AiFillCloseSquare } from 'react-icons/ai'
 import Image from 'next/image'
-import { useState } from 'react'
 import { AiOutlineHeart, AiOutlineShoppingCart } from 'react-icons/ai'
-import Cart from '@/components/CartProducts'
 
 type Props = {}
 
 export default function Header({ }: Props) {
 
-   const [cartVisible, setCartVisible] = useState<boolean>(false)
 
    return (
       <div>
@@ -17,10 +13,10 @@ export default function Header({ }: Props) {
             <p className='marca'><span>Rocha's</span>e-commerce</p>
             <div className='div_icons'>
                <button>
-                  <AiOutlineHeart className="icon_heart" onClick={() => setCartVisible(false)} />
+                  <AiOutlineHeart className="icon_heart"/>
                </button>
                <button>
-                  <AiOutlineShoppingCart className="icons cart" onClick={() => setCartVisible(true)} />
+                  <AiOutlineShoppingCart className="icons cart"/>
                </button>
                <div className='div_descCart'>
                   <p className='descCart'>R$ 0,00</p>
@@ -28,8 +24,6 @@ export default function Header({ }: Props) {
                </div>
             </div>
          </div>
-         {cartVisible &&
-            <Cart func={setCartVisible} condition={false} />}
       </div>
    )
 }
