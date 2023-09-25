@@ -1,9 +1,9 @@
 // Styles
 import * as Styles from "./styles";
 import { useSelector } from "react-redux";
-import CartItem from '../cart-item/cartItem'
+import CartItem from "../cart-item/cartItem";
 
-const Cart = ({ isvisible, setIsVisible }) => {
+const Cart = ({ setIsVisible }) => {
   const handleEscapeAreaClick = () => setIsVisible(false);
 
   const { products } = useSelector((rootReducer) => rootReducer.cartReducer);
@@ -14,11 +14,13 @@ const Cart = ({ isvisible, setIsVisible }) => {
       <Styles.CartContent>
         <Styles.CartTitle>Carrinho de compras</Styles.CartTitle>
         {products.map((product) => (
-          <CartItem
-            src={product.src}
-            name={product.name}
-            price={product.price}
-          />
+          <div key={product.price}>
+            <CartItem
+              src={product.src}
+              name={product.name}
+              price={product.price}
+            />
+          </div>
         ))}
       </Styles.CartContent>
     </Styles.CartContainer>
