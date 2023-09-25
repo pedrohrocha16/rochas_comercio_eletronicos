@@ -17,7 +17,7 @@ function CartItem({ src, name, price }: Props) {
       <div className='flex h-[200px] max-w-[400px]'>
          <div className='flex justify-center items-center h-[180px] m-[20px]'>
             <div>
-               <Image src={src} width={125} alt='product_cart' />
+               <Image src={src} width={125} height={125} alt='product_cart' className='max-w-[125px]' />
             </div>
             <div className='flex flex-row justify-center ml-[25px] items-center text-[14px] h-[80px] font-medium'>
                <div>
