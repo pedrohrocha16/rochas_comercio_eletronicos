@@ -3,7 +3,6 @@
 @import url(footer.css);
 @import url(mainlist.css);
 @import url(mainproducts.css);
-@import url(modal.css);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

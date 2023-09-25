@@ -8,7 +8,7 @@ type Props = {
 export default function MainContainer({ children }: Props) {
    return (
       <div>
-         <Header />
+         <Header isvisible={true} />
          <div className='flex justify-center w-full items-center'>
             {children}
          </div>
