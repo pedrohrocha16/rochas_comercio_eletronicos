@@ -8,17 +8,15 @@ type Props = {
    isvisible: any
 }
 
-export default function Header({}: Props) {
+export default function Header({ }: Props) {
 
    const [cartIsVisible, setCartIsVisible] = useState(false);
 
-   const { products } = useSelector((rootReducer) => rootReducer.cartReducer);
+   const { products } = useSelector((rootReducer: any) => rootReducer.cartReducer);
 
    const handleCartClick = () => {
       setCartIsVisible(true);
    };
-
-
 
    return (
       <div>
@@ -36,7 +34,7 @@ export default function Header({}: Props) {
                   <p className='descCart'>R$ 0,00</p>
                   {products.length > 1 ? (
                      <p className='descCart'>{products.length} itens</p>
-                  ) : <p className='descCart'>{products.length} item</p> }
+                  ) : <p className='descCart'>{products.length} item</p>}
                </div>
             </div>
          </div>

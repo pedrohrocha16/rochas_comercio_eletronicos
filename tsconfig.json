@@ -18,6 +18,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/redux/cart/reducer.jsx", "src/redux/store.jsx", "src/redux/root-reducer.jsx", "src/redux/cart/action-type.jsx", "src/redux/cart/actions.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/redux/cart/reducer.tsx", "src/redux/store.tsx", "src/redux/root-reducer.tsx", "src/redux/cart/action-type.tsx", "src/redux/cart/actions.tsx"],
   "exclude": ["node_modules"]
 }
