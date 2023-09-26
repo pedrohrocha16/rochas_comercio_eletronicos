@@ -4,12 +4,12 @@ import { IoAddCircle } from 'react-icons/io5'
 import { useDispatch } from "react-redux"
 
 export interface Product {
+   id: string
    src: string
    name: string
    info: string
    tag: string
    price: number
-   quantidade: number
 }
 
 export default function ProductCard(Product: any) {

@@ -33,11 +33,12 @@ export default function MainSection({ }: Props) {
           </div>
         </main>
         <div className='main_products'>
-          <h2>Produtos</h2>
+          <h2 className='font-[600] text-[18px]'>Mais Vendidos</h2>
           <ul>
             {listProducts && listProducts.map((product) => (
               <div key={product.id} >
                 <ProductCard
+                  id={product.id}
                   src={product.src}
                   name={product.name}
                   info={product.info}

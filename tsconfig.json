@@ -18,6 +18,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/redux/cart/reducer.jsx", "src/redux/store.jsx", "src/redux/root-reducer.jsx", "src/redux/cart/action-type.jsx", "src/redux/cart/actions.jsx"],
   "exclude": ["node_modules"]
 }
