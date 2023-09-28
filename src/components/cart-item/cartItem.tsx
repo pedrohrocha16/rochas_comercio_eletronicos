@@ -2,12 +2,32 @@ import React from 'react'
 import Image from 'next/image'
 import { MdRemove, MdAdd } from 'react-icons/md'
 import { IoMdTrash } from 'react-icons/io'
+import { useDispatch } from 'react-redux'
+import { removeProductsFromCart, increaseProducts, decreaseProducts } from '../../redux/cart/actions'
 
 type Props = {
    product: any
 }
 
 function CartItem({ product }: Props) {
+
+   const productId = product.id
+
+   const dispatch = useDispatch()
+
+   const handleRemoveClick = () => {
+      dispatch(removeProductsFromCart(productId))
+   }
+
+   const handleIncreaseProduct = () => {
+      dispatch(increaseProducts(productId))
+   }
+
+   const handleDecreaseProduct = () => {
+      dispatch(decreaseProducts(productId))
+   }
+
+
 
    return (
       <div className='flex h-[200px] max-w-[400px]'>
@@ -20,7 +40,7 @@ function CartItem({ product }: Props) {
                   <p>{product.name}</p>
                   <p>R${product.price}</p>
                   <div className="text-[16px] flex items-center justify-center text-center gap-[10px] flex-row border-[1px] rounded-[10px] w-[100px] h-[30px] border-zinc-400 mt-5">
-                     {product.quantity > 0 ? <MdRemove className="text-[18px]" /> : <IoMdTrash />} {product.quantity}<MdAdd />
+                     {product.quantity > 0 ? <MdRemove className="text-[18px]" onClick={() => handleDecreaseProduct()} /> : <IoMdTrash className="text-[20px]" onClick={() => handleRemoveClick()} />} <p className='select-none'>{product.quantity}</p><MdAdd onClick={() => handleIncreaseProduct()} />
                   </div>
                </div>
             </div>

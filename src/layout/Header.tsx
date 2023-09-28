@@ -3,6 +3,7 @@ import { AiOutlineHeart, AiOutlineShoppingCart } from 'react-icons/ai'
 import Cart from '../components/cart/index'
 import { useState } from 'react'
 import { useSelector } from 'react-redux'
+import { selectProductsTotalPrice } from '@/redux/cart/cart.selectors'
 
 type Props = {
    isvisible: any
@@ -13,6 +14,8 @@ export default function Header({ }: Props) {
    const [cartIsVisible, setCartIsVisible] = useState(false);
 
    const { products } = useSelector((rootReducer: any) => rootReducer.cartReducer);
+
+   const productsTotalPrice = useSelector(selectProductsTotalPrice)
 
    const handleCartClick = () => {
       setCartIsVisible(true);
@@ -31,10 +34,10 @@ export default function Header({ }: Props) {
                   <AiOutlineShoppingCart className="icons cart" onClick={handleCartClick} />
                </button>
                <div className='div_descCart'>
-                  <p className='descCart'>R$ 0,00</p>
+                  <p className='descCart'>R$ {productsTotalPrice.toFixed(2)}</p>
                   {products.length > 1 ? (
                      <p className='descCart'>{products.length} itens</p>
-                  ) : <p className='descCart'>{products.length} item</p>}
+                  ) : <p className='descCart '>{products.length} item</p>}
                </div>
             </div>
          </div>
