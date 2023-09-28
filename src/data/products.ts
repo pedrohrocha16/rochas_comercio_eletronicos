@@ -68,7 +68,7 @@ const products = [
     info: "Smartwatch 60 Modos Esportivos Medição de Saturação de Sangue e Oxigênio Smart Watch For Android IOS Phone (Black)",
     quantidade: 1,
     tag: "NOVIDADE",
-    price: 6999,
+    price: 309,
   },
   {
     id: "998865751",

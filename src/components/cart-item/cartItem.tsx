@@ -39,8 +39,8 @@ function CartItem({ product }: Props) {
                <div>
                   <p>{product.name}</p>
                   <p>R${product.price}</p>
-                  <div className="text-[16px] flex items-center justify-center text-center gap-[10px] flex-row border-[1px] rounded-[10px] w-[100px] h-[30px] border-zinc-400 mt-5">
-                     {product.quantity > 0 ? <MdRemove className="text-[18px]" onClick={() => handleDecreaseProduct()} /> : <IoMdTrash className="text-[20px]" onClick={() => handleRemoveClick()} />} <p className='select-none'>{product.quantity}</p><MdAdd onClick={() => handleIncreaseProduct()} />
+                  <div className="text-[16px] flex items-center justify-center text-center gap-[15px] flex-row border-[1px] rounded-[10px] w-[100px] h-[50px] border-zinc-400 mt-5">
+                     {product.quantity > 0 ? <MdRemove className="text-[25px]" onClick={() => handleDecreaseProduct()} /> : <IoMdTrash className="text-[25px]" onClick={() => handleRemoveClick()} />} <p className='select-none'>{product.quantity}</p><MdAdd className="text-[25px]" onClick={() => handleIncreaseProduct()} />
                   </div>
                </div>
             </div>
