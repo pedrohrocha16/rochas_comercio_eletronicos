@@ -14,16 +14,22 @@ const Cart = ({ isvisible, setIsVisible }) => {
   return (
     <Styles.CartContainer isvisible>
       <Styles.CartEscapeArea onClick={handleEscapeAreaClick} />
-      <Styles.CartContent className="duration-75">
+      <Styles.CartContent>
         <Styles.CartTitle>Carrinho de compras</Styles.CartTitle>
         {products.map((product) => (
           <div key={product.id}>
             <CartItem product={product} />
           </div>
         ))}
-        <Styles.CartTotal>
-          <p className="text-[14px] font-normal">Subtotal: R$ {productsTotalPrice.toFixed(2)}</p>
-        </Styles.CartTotal>
+        {productsTotalPrice > 0 ? (
+          <Styles.CartTotal>
+            <p className="text-[14px] font-normal">
+              Subtotal: R$ {productsTotalPrice.toFixed(2)}
+            </p>
+          </Styles.CartTotal>
+        ) : (
+          <p>Seu carrinho está vazio!</p>
+        )}
       </Styles.CartContent>
     </Styles.CartContainer>
   );

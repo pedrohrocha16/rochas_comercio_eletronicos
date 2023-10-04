@@ -11,9 +11,8 @@ export const CartContainer = styled.div`
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: flex-end;
-  visibility: ${(props) => (props.isvisible === true? "visible" : "hidden")};
+  visibility: ${(props) => (props.isvisible === true ? "visible" : "hidden")};
   opacity: ${(props) => (props.isvisible ? "1" : "0")};
-  transition: 0.3ms ease;
 
   p {
     color: #222222;
@@ -31,6 +30,7 @@ export const CartContent = styled.div`
   background-color: white;
   padding: 20px;
   overflow-y: scroll;
+  transform: translateX(0%, -100%);
 
   @media (max-width: 768px) {
     min-width: 85%;
