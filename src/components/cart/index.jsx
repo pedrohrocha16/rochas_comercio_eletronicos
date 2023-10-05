@@ -14,7 +14,7 @@ const Cart = ({ isvisible, setIsVisible }) => {
   return (
     <Styles.CartContainer isvisible>
       <Styles.CartEscapeArea onClick={handleEscapeAreaClick} />
-      <Styles.CartContent className="animate-[bounce_0.1s_ease-in]">
+      <Styles.CartContent className="animate-[bounce_0.4s_ease-in-out]">
         <Styles.CartTitle>Carrinho de compras</Styles.CartTitle>
         {products.map((product) => (
           <div key={product.id}>
