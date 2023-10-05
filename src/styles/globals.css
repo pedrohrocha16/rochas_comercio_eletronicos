@@ -8,7 +8,7 @@
 @tailwind utilities;
 
 body {
-  background-color: rgb(243, 243, 243);
+  background-color: rgb(250, 250, 250);
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }

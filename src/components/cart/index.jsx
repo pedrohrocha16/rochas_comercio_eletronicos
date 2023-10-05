@@ -21,9 +21,9 @@ const Cart = ({ isvisible, setIsVisible }) => {
             <CartItem product={product} />
           </div>
         ))}
-        {productsTotalPrice > 0 ? (
+        {products.length > 0 ? (
           <Styles.CartTotal>
-            <p className="text-[14px] font-normal">
+            <p className="text-[14px] font-normal select-none">
               Subtotal: R$ {productsTotalPrice.toFixed(2)}
             </p>
           </Styles.CartTotal>
